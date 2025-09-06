@@ -1,10 +1,10 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
-   Name = "Level X",
+   Name = "Level X Hub",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "Level X is Loading",
+   LoadingTitle = "Level X Hub is Loading",
    LoadingSubtitle = "by DAPAN",
-   ShowText = "Level X", -- for mobile users to unhide rayfield, change if you'd like
+   ShowText = "Level X Hub", -- for mobile users to unhide rayfield, change if you'd like
    Theme = "Amethyst", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
@@ -15,7 +15,7 @@ local Window = Rayfield:CreateWindow({
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "Big Hub"
+      FileName = "Level X Hub"
    },
 
    Discord = {
@@ -76,6 +76,24 @@ local Button = Tab:CreateButton({
    Name = "Script 1 (best)",
    Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/idixof-eng/Wpl0o0lqW.hub-/refs/heads/main/.lua"))()
+   end,
+})
+
+local Tab = Window:CreateTab("fish it", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Script rank")
+local Button = Tab:CreateButton({
+   Name = "Script 1 (best)",
+   Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/idixof-eng/Wpl0o0lqW.hub-/refs/heads/main/.lua"))()
+   end,
+})
+
+local Tab = Window:CreateTab("Universal Vehicule", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Script rank")
+local Button = Tab:CreateButton({
+   Name = "Script 1 (best)",
+   Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Documantation12/Universal-Vehicle-Script/main/Main.lua'))()
    end,
 })
 
