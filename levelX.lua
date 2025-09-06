@@ -1,4 +1,4 @@
-local Rayfield = loadstring(gameHttpGet('httpssirius.menurayfield'))()
+local Rayfield = loadstring(game:HttpGet('httpssirius.menurayfield'))()
 local Window = RayfieldCreateWindow({
    Name = Level X Private,
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
@@ -68,4 +68,5 @@ local Button = TabCreateButton({
    Callback = function()
 	loadstring(gameHttpGet(httpsraw.githubusercontent.comVapeVoidwareVW-Addmainnightsintheforest.lua, true))()
    end,
+
 })
